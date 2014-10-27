@@ -1,0 +1,17 @@
+Dear dhr. van de Hoek,
+ 
+I send you this mail in following our conversation last time (11-09-2014) where we've talked about the application that communicate between the departments
+me and my team have good espectations for the progress of the project. here are the main points we've talked about:
+
+- everbody should have access to the application, and they only need one account
+-it's not costumers specific, the lower one is actually project specific. 
+-our department should be able to put all work on done, not suspended.
+
+we hope that everything is allright. 
+
+
+sincerely,
+
+Rudyard Meijsen
+Project manager
+Team GOTO (Ricky van den Berg, Steven Logghe en Rudyard Meijsen)

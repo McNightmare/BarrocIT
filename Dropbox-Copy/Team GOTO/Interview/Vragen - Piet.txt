@@ -1,0 +1,24 @@
+>wat houd de wetgeving met betrekking tot de vertrouwelijkheid precies in.
+>Als we het uitgangspunt EXACT gaan gebruiken, maar als het echt niet anders uitkomt, zou het dan ook een optie zijn om naar excel te omschakelen.
+>De limietoverschijdingen die worden doorgegeven aan de accountmanager, zou je willen dat wij die automatiseren of moet het zo blijven?
+>heb je nog wat extra dingen om te vertellen?
+
+>tabellen, hoe lang mogen de characters maximaal zijn? 
+geen idee. 
+
+tabel bevat een aantal items,
+factuur versturen, na 3 maanden als er niet betaald is, bel ik naar afdeling development en stopt met ontwikkelen
+als ze wel betaald hebben dan gaat het weer verder
+als de klant niet betaald heeft dan bellen ze op voor reden waarom er niet betaald is.
+lijst met mensen die al een tijdje niet betaald hebben.
+een veld met alle telefoongesprekken, sales enzovoort.
+veld BKR voor in tabel
+of er is een afwijzing, of het is goedgekeurd, de salesman moet dat kunnen zien.
+limiet is per klant verschillend.
+het is beter om toch EXACT te gebruiken.
+tabellen zijn verschillend in debiteuren en crediteuren
+
+dikgedrukte texten in de tabel zijn voor iedereen, de niet-vette zijn alleen voor het bedrijf
+
+groot boekhoudnummer is 8011
+

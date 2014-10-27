@@ -1,0 +1,83 @@
+department
+employees
+applications
+customers
+R&D
+Sales Department
+maintenance contract
+account manager
+spreadsheet-program
+customer data
+contract person
+company name
+address
+postcode (zip code)
+residence
+Contact persons
+Telephone number
+Fax number
+e-mail
+Maintenance contract
+Open projects
+Applications
+Hardware
+Software
+Appointments
+Internal contact person
+
+sales department 
+account managers
+customers
+colleague
+customer data
+Company name
+Address1
+Postcode1 (Zip code)
+Residence1
+Address2
+Postcode2 (Zip code)
+Residence2
+Contact person
+Initials
+Telephone number1
+Telephone number2
+Fax number
+e-mail
+Offer numbers
+Offer status
+Prospect
+Date of action
+Last contact date
+Next action
+Sale percentage
+Creditworthy 
+
+Afdeling
+financiele administratie
+accountmanager
+indeling
+klantenbestand
+eventuele limietoverschrijding
+
+Debiteurengegevens	Crediteurengegevens
+Nummer			Nummer
+Bedrijfsnaam		Bedrijfsnaam
+adres1			adres1
+postcode1		postcode1
+woonplaats1		woonplaats1
+adres2			adres2	
+postcode2		postcode2
+woonplaats2		woonplaats2
+Contactpersoon		Contactpersoon
+Voorletters		Voorletters
+Telefoonnummer		Telefoonnummer
+Faxnummer		Faxnummer
+e-mail			e-mail
+bankrekeningnummer	Bankrekeningnummer
+Saldo			Saldo
+aantal facturen		aantal facturen
+Omzetbedrag		Omzetbedrag
+Limiet			Limiet
+grootboekrekeningnummer	Grootboekrekeningnummer
+BTW-code		BTW-code
+

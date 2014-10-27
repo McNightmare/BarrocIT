@@ -1,0 +1,19 @@
+ProjectBoundries
+
+The Project is started at monday 8 sept. and the deadline is at monday 3 nov. so we've only 5 weeks before the deadline.
+if we're getting behind, then we need more effort to keep up. en thus we'll have lesser rest.
+we're not going to add additional functions if they don't need to be in the application. else we may have not enough time to finish the main goal of the project.
+since we've already the laptops and programs we need. we don't have any additional costs for the project. (except food to give us alive)
+if one(or multiple) of the teammates are absent, than we'll try to reach each other through skype, and so bringing data and information to each other.
+
+Products:
+The first product we made is The Plan of approach, so you know what the project is all about, 
+Then we've a planning, to make priority what needs to be first to make and what needs to be last
+in the planning stands also a design or prototype, so we know how the design of our final product looks like
+there are also the rapports and the final product, which is the product where everything was all about.
+
+Risks:
+Intern Risks:
+We've only 5 weeks the time, we we don't spend our time well, then there's a change that the project won't be done at time.
+extern Risks:
+the projectBoundries are obvious and we're not dependant from other projects, so far we know, we don't have extern risks.

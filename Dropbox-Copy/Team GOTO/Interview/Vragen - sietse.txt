@@ -1,0 +1,38 @@
+
+
+
+- The information you gave us said you make lots of use of the R&D department, how does this work in practice? (does
+R&D make use of the same database to send you ideas)
+
+- Question about the table, is there any reason besides the difference between basic and unique information that the
+upper part is Fat
+
+- What is the main problem staying up-to-date with the maintenence contracts and how would you prefer to see this
+ solved
+
+- Are there any things specific you want us to include in the program.
+
+- should the program have acces to the internet or is it just for local use.
+
+- Is there anything we have missed or do you feel you need te say before we get started?
+
+
+
+
+>if it works correctly, it should not give too much trouble to import it.
+>it's not costumers specific, the lower one is actually project specific. we need to see that the costumer has paid for the contract/project. when a costumer hasn't paid, it should be suspended. it should be that the project ID with the company should be linked to the costumer and then we should see the project he has
+you should be able to make a nice interface. appointments should have a couple of collents, one should be a date, one wich spoken with, a remark field behind that.
+should've really feeled up. if we've the appointment, we filled in.
+>our department should be able to put all work on done, not suspended. if the costumer doesn't need it, then the project will be suspended
+
+
+
+>what database should be used? 
+doesn't matter, i don't care
+>who should be able to access the application?
+everbody, and they only need one account, and they need a password, else they see all the things.
+>what kind of interface?
+a simple one, doesn't need to be complicated.
+
+
+

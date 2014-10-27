@@ -1,0 +1,15 @@
+Beste Dhr Vorstelaars,
+ 
+Ik stuur u deze mail in navolging van ons gesprek laatste week Waarin wij de applicatie die de communicatie tussen de afdelingen moet verbeteren hebben besproken. Mijn team en ik hebben goede verwachtingen voor de verloop van het project. Hier nog even de hoofdpunten die wij besproken hebben:
+
+-als de klant niet betaald heeft dan bellen ze op voor reden waarom er niet betaald is.
+-factuur versturen, na 3 maanden als er niet betaald is, bel ik naar afdeling development en stopt met ontwikkelen
+-of er is een afwijzing, of het is goedgekeurd, de salesman moet dat kunnen zien.
+
+Wij hopen dat alles zo in orde is. U zult uiterlijk dinsdag 16 september onze offerte binnenkrijgen en ik hoop dat wij dan spoedig tot een overeenkomst kunnen komen.
+
+Met vriendelijke groet,
+
+Rudyard Meijsen
+Project manager
+Team GOTO (Ricky van dan Berg, Steven Logghe en Rudyard Meijsen)
