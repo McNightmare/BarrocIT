@@ -15,6 +15,8 @@ namespace BarrocIT
         public frmFinance()
         {
             InitializeComponent();
+            DBMachine dbf = new DBMachine();
+            dbf.initFinance(this);
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
@@ -30,7 +32,7 @@ namespace BarrocIT
                 if (result == DialogResult.Yes)
                 {
                     frmLogin.isActiveFinance = false;
-                    this.Close();
+                    Environment.Exit(0);
                 }
                 else
                 {

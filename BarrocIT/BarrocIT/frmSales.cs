@@ -15,11 +15,13 @@ namespace BarrocIT
         public frmSales()
         {
             InitializeComponent();
+            DBMachine dbs = new DBMachine();
+            dbs.initSales(this);
         }
 
         private void frmSales_Load(object sender, EventArgs e)
         {
-            DBMachine stuff = new DBMachine("querystuff", this);
+
         }
 
         private void frmSales_FormClosing(object sender, FormClosingEventArgs e)
@@ -30,11 +32,11 @@ namespace BarrocIT
                 if (result == DialogResult.Yes)
                 {
                     frmLogin.isActiveSales = false;
-                    this.Close();
+                    Environment.Exit(0);
                 }
                 else
                 {
-                    e.Cancel = true;
+                    e.Cancel = true;         
                 }
             }
             else

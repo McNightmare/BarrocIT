@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvFinance = new System.Windows.Forms.DataGridView();
+            this.barrocDGV = new System.Windows.Forms.DataGridView();
             this.Update = new System.Windows.Forms.Button();
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.tbInitals = new System.Windows.Forms.TextBox();
@@ -68,7 +68,7 @@
             this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFinance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barrocDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
@@ -78,13 +78,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvFinance
+            // barrocDGV
             // 
-            this.dgvFinance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFinance.Location = new System.Drawing.Point(12, 12);
-            this.dgvFinance.Name = "dgvFinance";
-            this.dgvFinance.Size = new System.Drawing.Size(559, 484);
-            this.dgvFinance.TabIndex = 0;
+            this.barrocDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.barrocDGV.Location = new System.Drawing.Point(12, 12);
+            this.barrocDGV.Name = "barrocDGV";
+            this.barrocDGV.Size = new System.Drawing.Size(559, 484);
+            this.barrocDGV.TabIndex = 0;
             // 
             // Update
             // 
@@ -453,11 +453,11 @@
             this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.lblKlantnr);
             this.Controls.Add(this.Update);
-            this.Controls.Add(this.dgvFinance);
+            this.Controls.Add(this.barrocDGV);
             this.Name = "frmFinance";
             this.Text = "Finance";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmFinance_FormClosing);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFinance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barrocDGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
@@ -472,7 +472,6 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvFinance;
         private System.Windows.Forms.Button Update;
         private System.Windows.Forms.TextBox tbEmail;
         private System.Windows.Forms.TextBox tbInitals;
@@ -512,5 +511,6 @@
         private System.Windows.Forms.NumericUpDown numericUpDown5;
         private System.Windows.Forms.NumericUpDown numericUpDown6;
         private System.Windows.Forms.NumericUpDown numericUpDown7;
+        public System.Windows.Forms.DataGridView barrocDGV;
     }
 }

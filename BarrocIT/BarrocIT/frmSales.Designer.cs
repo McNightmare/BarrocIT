@@ -570,7 +570,6 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView barrocDGV;
         private System.Windows.Forms.TextBox txtMail;
         private System.Windows.Forms.TextBox txtInitial;
         private System.Windows.Forms.TextBox txtCPerson;
@@ -618,5 +617,6 @@
         private System.Windows.Forms.Label lblCompanyName;
         private System.Windows.Forms.ComboBox cbProspect;
         private System.Windows.Forms.ComboBox cbCreditworthy;
+        public System.Windows.Forms.DataGridView barrocDGV;
     }
 }

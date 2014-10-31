@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.barrocDGV = new System.Windows.Forms.DataGridView();
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.tbInitials = new System.Windows.Forms.TextBox();
             this.tbContactPerson = new System.Windows.Forms.TextBox();
@@ -51,7 +51,7 @@
             this.lblZip = new System.Windows.Forms.Label();
             this.lblAddress = new System.Windows.Forms.Label();
             this.lblKlantnr = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.tbCompany = new System.Windows.Forms.TextBox();
             this.lblCompany = new System.Windows.Forms.Label();
@@ -73,19 +73,19 @@
             this.tbApplications = new System.Windows.Forms.TextBox();
             this.tbOpenProjects = new System.Windows.Forms.TextBox();
             this.cbMaintenance = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barrocDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKlantnr)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // barrocDGV
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(559, 503);
-            this.dataGridView1.TabIndex = 1;
+            this.barrocDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.barrocDGV.Location = new System.Drawing.Point(12, 12);
+            this.barrocDGV.Name = "barrocDGV";
+            this.barrocDGV.Size = new System.Drawing.Size(559, 503);
+            this.barrocDGV.TabIndex = 1;
             // 
             // tbEmail
             // 
@@ -266,14 +266,15 @@
             this.lblKlantnr.TabIndex = 25;
             this.lblKlantnr.Text = "Klantnummer";
             // 
-            // button1
+            // btnUpdate
             // 
-            this.button1.Location = new System.Drawing.Point(607, 481);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 34);
-            this.button1.TabIndex = 68;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnUpdate.Location = new System.Drawing.Point(607, 481);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(115, 34);
+            this.btnUpdate.TabIndex = 68;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // button2
             // 
@@ -472,7 +473,7 @@
             this.Controls.Add(this.tbCompany);
             this.Controls.Add(this.lblCompany);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.tbEmail);
             this.Controls.Add(this.tbInitials);
             this.Controls.Add(this.tbContactPerson);
@@ -495,12 +496,12 @@
             this.Controls.Add(this.lblZip);
             this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.lblKlantnr);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.barrocDGV);
             this.Name = "frmDevelopment";
             this.Text = "Development";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDevelopment_FormClosing_1);
             this.Load += new System.EventHandler(this.frmDevelopment_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barrocDGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKlantnr)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
@@ -511,7 +512,6 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox tbEmail;
         private System.Windows.Forms.TextBox tbInitials;
         private System.Windows.Forms.TextBox tbContactPerson;
@@ -534,7 +534,7 @@
         private System.Windows.Forms.Label lblZip;
         private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.Label lblKlantnr;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox tbCompany;
         private System.Windows.Forms.Label lblCompany;
@@ -556,5 +556,6 @@
         private System.Windows.Forms.TextBox tbApplications;
         private System.Windows.Forms.TextBox tbOpenProjects;
         private System.Windows.Forms.ComboBox cbMaintenance;
+        public System.Windows.Forms.DataGridView barrocDGV;
     }
 }

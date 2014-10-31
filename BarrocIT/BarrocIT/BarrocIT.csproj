@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatabaseHandler.cs" />
     <Compile Include="DBMachine.cs" />
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -123,6 +124,10 @@
   <ItemGroup>
     <Content Include="GOTODB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GOTODB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>GOTODB.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>

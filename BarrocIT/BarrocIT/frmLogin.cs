@@ -31,11 +31,12 @@ namespace BarrocIT
         {
             if (cbDepartment.Text != "")
             {
-                if (cbDepartment.Text == "Sales" && txtPassword.Text == "Jberger")
+                if (cbDepartment.Text == "Sales" && txtPassword.Text == "Jberger" && isActiveSales == false)
                 {
                     isActiveSales = true;
                     frmSales frmsales = new frmSales();
                     frmsales.Show();
+                    txtPassword.Text = "";
                 }
                 else if (cbDepartment.Text == "Finance" && txtPassword.Text == "Wvortelaars")
                 {

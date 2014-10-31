@@ -10,118 +10,85 @@ using System.Windows.Forms;
 
 namespace BarrocIT
 {
+    //In order to run this local change your connection string to your own connection string
     class DBMachine
     {
-        String query;
-        Form form;
-
-
-
-
-
-        private SqlConnection con;
-
-        public DBMachine()
+        //Initialize the data in the datagridview for the finance form.    
+        public void initFinance(frmFinance frmF)
         {
-            con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Jeebes\Documents\GitHub\BarrocIT\BarrocIT\BarrocIT\GOTODB.mdf;Integrated Security=True");
-            Form form = new Form();
-        }
-       
-        public void TestConnection()
-        {
-            bool open = false;
-
+            //try to open a connection and execute a query
             try
             {
-                if (con.State == System.Data.ConnectionState.Closed)
-                    con.Open();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                if (con.State == System.Data.ConnectionState.Open)
-                {
-                    open = true;
-                }
-                con.Close();
-            }
-
-            if (!open)
-            {
-                Application.Exit();
-            }
-        }
-
-        public void OpenConnectionToDB()
-        {
-            con.Open();
-        }
-
-        public void CloseConnectionToDB()
-        {
-            con.Close();
-        }
-
-        public void LoadDGV()
-        {
-
-        }
-
-        public System.Data.DataTable FillDT(string query)
-        {
-            TestConnection();
-            OpenConnectionToDB();
-
-            SqlDataAdapter dataAdapter = new SqlDataAdapter(query, GetCon());
-            DataTable dt = new DataTable();
-            dataAdapter.Fill(dt);
-
-            CloseConnectionToDB();
-
-            return dt;
-        }
-
-        public SqlConnection GetCon()
-        {
-            return con;
-        }
-
-
-
-
-
-
-
-        public DBMachine(String q, Form activeForm)
-        {
-            query = q;
-            form = activeForm;
-        }
-
-        public void GetDB()
-        {
-            
-            try
-            {
-                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Jeebes\Documents\GitHub\BarrocIT\BarrocIT\BarrocIT\GOTODB.mdf;Integrated Security=True");
+                //open a connection with the connection string
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Ricky van den Berg\Documents\GitHub\BarrocIT\BarrocIT\BarrocIT\GOTODB.mdf;Integrated Security=True");
                 DataSet dbSet = new DataSet();
 
-                string query = "asdfadsf";
+                //make and execute query
+                string query = "SELECT * FROM tbl_Finance";
                 SqlDataAdapter adapter = new SqlDataAdapter(query, con);
 
+                //fill the datagridview with the results from the query
                 adapter.Fill(dbSet);
-                //form.barrocDB.DataSource = dbSet.Tables[0];
-                //dataGridView1.Columns[0].ReadOnly = true;
-
-
+                frmF.barrocDGV.DataSource = dbSet.Tables[0];
+                frmF.barrocDGV.Columns[0].ReadOnly = true;
 
             }
-            catch(Exception e)
+            //catch the exception if the connection or query fails
+            catch (Exception e)
             {
-                
+                MessageBox.Show(e.Message);
+            }
+        }
+        //Initialize the data in the datagridview for the sales form. 
+        public void initSales(frmSales frmS)
+        {
+            //try to open a connection and execute a query
+            try
+            {
+                //open a connection with the connection string
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Ricky van den Berg\Documents\GitHub\BarrocIT\BarrocIT\BarrocIT\GOTODB.mdf;Integrated Security=True");
+                DataSet dbSet = new DataSet();
+
+                //make and execute query
+                string query = "SELECT * FROM tbl_Sales";
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+
+                //fill the datagridview with the results from the query
+                adapter.Fill(dbSet);
+                frmS.barrocDGV.DataSource = dbSet.Tables[0];
+                frmS.barrocDGV.Columns[0].ReadOnly = true;
+
+            }
+            //catch the exception if the connection or query fails
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+        }
+        //Initialize the data in the datagridview for the sales form. 
+        public void initDevelopment(frmDevelopment frmD)
+        {
+            //try to open a connection and execute a query
+            try
+            {
+                //open a connection with the connection string
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Ricky van den Berg\Documents\GitHub\BarrocIT\BarrocIT\BarrocIT\GOTODB.mdf;Integrated Security=True");
+                DataSet dbSet = new DataSet();
+
+                //make and execute query
+                string query = "SELECT * FROM tbl_Development";
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+
+                //fill the datagridview with the results from the query
+                adapter.Fill(dbSet);
+                frmD.barrocDGV.DataSource = dbSet.Tables[0];
+                frmD.barrocDGV.Columns[0].ReadOnly = true;
+
+            }
+            //catch the exception if the connection or query fails
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
             }
         }
     }

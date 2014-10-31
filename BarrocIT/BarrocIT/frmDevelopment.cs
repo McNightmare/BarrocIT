@@ -15,6 +15,8 @@ namespace BarrocIT
         public frmDevelopment()
         {
             InitializeComponent();
+            DBMachine dbd = new DBMachine();
+            dbd.initDevelopment(this);
         }
 
         private void numericUpDown5_ValueChanged(object sender, EventArgs e)
@@ -67,6 +69,11 @@ namespace BarrocIT
             {
                 e.Cancel = true;
             }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
