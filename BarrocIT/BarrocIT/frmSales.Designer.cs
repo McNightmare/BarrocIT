@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.barrocDGV = new System.Windows.Forms.DataGridView();
             this.txtMail = new System.Windows.Forms.TextBox();
             this.txtInitial = new System.Windows.Forms.TextBox();
             this.txtCPerson = new System.Windows.Forms.TextBox();
@@ -72,47 +72,49 @@
             this.nudPhonenr = new System.Windows.Forms.NumericUpDown();
             this.NudFaxnr = new System.Windows.Forms.NumericUpDown();
             this.Offernr = new System.Windows.Forms.NumericUpDown();
-            this.udProspect = new System.Windows.Forms.DomainUpDown();
-            this.udCreditworthy = new System.Windows.Forms.DomainUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtCompanyName = new System.Windows.Forms.TextBox();
+            this.lblCompanyName = new System.Windows.Forms.Label();
+            this.cbProspect = new System.Windows.Forms.ComboBox();
+            this.cbCreditworthy = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.barrocDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKlantnr)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPhonenr)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NudFaxnr)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Offernr)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // barrocDGV
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(559, 503);
-            this.dataGridView1.TabIndex = 1;
+            this.barrocDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.barrocDGV.Location = new System.Drawing.Point(12, 12);
+            this.barrocDGV.Name = "barrocDGV";
+            this.barrocDGV.Size = new System.Drawing.Size(559, 531);
+            this.barrocDGV.TabIndex = 1;
             // 
             // txtMail
             // 
-            this.txtMail.Location = new System.Drawing.Point(745, 257);
+            this.txtMail.Location = new System.Drawing.Point(745, 280);
             this.txtMail.Name = "txtMail";
             this.txtMail.Size = new System.Drawing.Size(126, 20);
             this.txtMail.TabIndex = 49;
             // 
             // txtInitial
             // 
-            this.txtInitial.Location = new System.Drawing.Point(745, 189);
+            this.txtInitial.Location = new System.Drawing.Point(745, 212);
             this.txtInitial.Name = "txtInitial";
             this.txtInitial.Size = new System.Drawing.Size(126, 20);
             this.txtInitial.TabIndex = 46;
             // 
             // txtCPerson
             // 
-            this.txtCPerson.Location = new System.Drawing.Point(745, 167);
+            this.txtCPerson.Location = new System.Drawing.Point(745, 190);
             this.txtCPerson.Name = "txtCPerson";
             this.txtCPerson.Size = new System.Drawing.Size(126, 20);
             this.txtCPerson.TabIndex = 45;
             // 
             // txtSecResidence
             // 
-            this.txtSecResidence.Location = new System.Drawing.Point(745, 145);
+            this.txtSecResidence.Location = new System.Drawing.Point(745, 168);
             this.txtSecResidence.Name = "txtSecResidence";
             this.txtSecResidence.Size = new System.Drawing.Size(126, 20);
             this.txtSecResidence.TabIndex = 44;
@@ -120,7 +122,7 @@
             // lblMail
             // 
             this.lblMail.AutoSize = true;
-            this.lblMail.Location = new System.Drawing.Point(606, 260);
+            this.lblMail.Location = new System.Drawing.Point(606, 283);
             this.lblMail.Name = "lblMail";
             this.lblMail.Size = new System.Drawing.Size(35, 13);
             this.lblMail.TabIndex = 43;
@@ -129,7 +131,7 @@
             // lblFaxnr
             // 
             this.lblFaxnr.AutoSize = true;
-            this.lblFaxnr.Location = new System.Drawing.Point(606, 237);
+            this.lblFaxnr.Location = new System.Drawing.Point(606, 260);
             this.lblFaxnr.Name = "lblFaxnr";
             this.lblFaxnr.Size = new System.Drawing.Size(62, 13);
             this.lblFaxnr.TabIndex = 42;
@@ -138,7 +140,7 @@
             // lblPhonenr
             // 
             this.lblPhonenr.AutoSize = true;
-            this.lblPhonenr.Location = new System.Drawing.Point(606, 214);
+            this.lblPhonenr.Location = new System.Drawing.Point(606, 237);
             this.lblPhonenr.Name = "lblPhonenr";
             this.lblPhonenr.Size = new System.Drawing.Size(76, 13);
             this.lblPhonenr.TabIndex = 41;
@@ -147,7 +149,7 @@
             // lblInitial
             // 
             this.lblInitial.AutoSize = true;
-            this.lblInitial.Location = new System.Drawing.Point(606, 192);
+            this.lblInitial.Location = new System.Drawing.Point(606, 215);
             this.lblInitial.Name = "lblInitial";
             this.lblInitial.Size = new System.Drawing.Size(36, 13);
             this.lblInitial.TabIndex = 40;
@@ -156,7 +158,7 @@
             // lblCPerson
             // 
             this.lblCPerson.AutoSize = true;
-            this.lblCPerson.Location = new System.Drawing.Point(606, 170);
+            this.lblCPerson.Location = new System.Drawing.Point(606, 193);
             this.lblCPerson.Name = "lblCPerson";
             this.lblCPerson.Size = new System.Drawing.Size(80, 13);
             this.lblCPerson.TabIndex = 39;
@@ -165,7 +167,7 @@
             // lblSecResidence
             // 
             this.lblSecResidence.AutoSize = true;
-            this.lblSecResidence.Location = new System.Drawing.Point(606, 148);
+            this.lblSecResidence.Location = new System.Drawing.Point(606, 171);
             this.lblSecResidence.Name = "lblSecResidence";
             this.lblSecResidence.Size = new System.Drawing.Size(93, 13);
             this.lblSecResidence.TabIndex = 38;
@@ -173,7 +175,7 @@
             // 
             // txtSecZip
             // 
-            this.txtSecZip.Location = new System.Drawing.Point(745, 123);
+            this.txtSecZip.Location = new System.Drawing.Point(745, 146);
             this.txtSecZip.Name = "txtSecZip";
             this.txtSecZip.Size = new System.Drawing.Size(126, 20);
             this.txtSecZip.TabIndex = 37;
@@ -181,7 +183,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(606, 148);
+            this.label7.Location = new System.Drawing.Point(606, 169);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(0, 13);
             this.label7.TabIndex = 36;
@@ -189,7 +191,7 @@
             // lblSecZip
             // 
             this.lblSecZip.AutoSize = true;
-            this.lblSecZip.Location = new System.Drawing.Point(606, 126);
+            this.lblSecZip.Location = new System.Drawing.Point(606, 149);
             this.lblSecZip.Name = "lblSecZip";
             this.lblSecZip.Size = new System.Drawing.Size(87, 13);
             this.lblSecZip.TabIndex = 35;
@@ -197,28 +199,28 @@
             // 
             // txtSecAdres
             // 
-            this.txtSecAdres.Location = new System.Drawing.Point(745, 100);
+            this.txtSecAdres.Location = new System.Drawing.Point(745, 123);
             this.txtSecAdres.Name = "txtSecAdres";
             this.txtSecAdres.Size = new System.Drawing.Size(126, 20);
             this.txtSecAdres.TabIndex = 34;
             // 
             // txtResisence
             // 
-            this.txtResisence.Location = new System.Drawing.Point(745, 77);
+            this.txtResisence.Location = new System.Drawing.Point(745, 100);
             this.txtResisence.Name = "txtResisence";
             this.txtResisence.Size = new System.Drawing.Size(126, 20);
             this.txtResisence.TabIndex = 33;
             // 
             // txtZip
             // 
-            this.txtZip.Location = new System.Drawing.Point(745, 53);
+            this.txtZip.Location = new System.Drawing.Point(745, 76);
             this.txtZip.Name = "txtZip";
             this.txtZip.Size = new System.Drawing.Size(126, 20);
             this.txtZip.TabIndex = 32;
             // 
             // txtAdres
             // 
-            this.txtAdres.Location = new System.Drawing.Point(745, 31);
+            this.txtAdres.Location = new System.Drawing.Point(745, 54);
             this.txtAdres.Name = "txtAdres";
             this.txtAdres.Size = new System.Drawing.Size(126, 20);
             this.txtAdres.TabIndex = 31;
@@ -226,7 +228,7 @@
             // lblSecAdres
             // 
             this.lblSecAdres.AutoSize = true;
-            this.lblSecAdres.Location = new System.Drawing.Point(606, 103);
+            this.lblSecAdres.Location = new System.Drawing.Point(606, 126);
             this.lblSecAdres.Name = "lblSecAdres";
             this.lblSecAdres.Size = new System.Drawing.Size(79, 13);
             this.lblSecAdres.TabIndex = 29;
@@ -235,7 +237,7 @@
             // lblResidence
             // 
             this.lblResidence.AutoSize = true;
-            this.lblResidence.Location = new System.Drawing.Point(606, 80);
+            this.lblResidence.Location = new System.Drawing.Point(606, 103);
             this.lblResidence.Name = "lblResidence";
             this.lblResidence.Size = new System.Drawing.Size(58, 13);
             this.lblResidence.TabIndex = 28;
@@ -244,7 +246,7 @@
             // lblZip
             // 
             this.lblZip.AutoSize = true;
-            this.lblZip.Location = new System.Drawing.Point(606, 56);
+            this.lblZip.Location = new System.Drawing.Point(606, 79);
             this.lblZip.Name = "lblZip";
             this.lblZip.Size = new System.Drawing.Size(49, 13);
             this.lblZip.TabIndex = 27;
@@ -253,7 +255,7 @@
             // lblAdres
             // 
             this.lblAdres.AutoSize = true;
-            this.lblAdres.Location = new System.Drawing.Point(606, 34);
+            this.lblAdres.Location = new System.Drawing.Point(606, 57);
             this.lblAdres.Name = "lblAdres";
             this.lblAdres.Size = new System.Drawing.Size(45, 13);
             this.lblAdres.TabIndex = 26;
@@ -270,28 +272,28 @@
             // 
             // txtFaxnr2
             // 
-            this.txtFaxnr2.Location = new System.Drawing.Point(745, 428);
+            this.txtFaxnr2.Location = new System.Drawing.Point(745, 451);
             this.txtFaxnr2.Name = "txtFaxnr2";
             this.txtFaxnr2.Size = new System.Drawing.Size(126, 20);
             this.txtFaxnr2.TabIndex = 65;
             // 
             // txtPhonenr2
             // 
-            this.txtPhonenr2.Location = new System.Drawing.Point(745, 405);
+            this.txtPhonenr2.Location = new System.Drawing.Point(745, 428);
             this.txtPhonenr2.Name = "txtPhonenr2";
             this.txtPhonenr2.Size = new System.Drawing.Size(126, 20);
             this.txtPhonenr2.TabIndex = 64;
             // 
             // txtInitial2
             // 
-            this.txtInitial2.Location = new System.Drawing.Point(745, 383);
+            this.txtInitial2.Location = new System.Drawing.Point(745, 406);
             this.txtInitial2.Name = "txtInitial2";
             this.txtInitial2.Size = new System.Drawing.Size(126, 20);
             this.txtInitial2.TabIndex = 63;
             // 
             // txtCPerson2
             // 
-            this.txtCPerson2.Location = new System.Drawing.Point(745, 361);
+            this.txtCPerson2.Location = new System.Drawing.Point(745, 384);
             this.txtCPerson2.Name = "txtCPerson2";
             this.txtCPerson2.Size = new System.Drawing.Size(126, 20);
             this.txtCPerson2.TabIndex = 62;
@@ -299,7 +301,7 @@
             // lblCreditWorthy
             // 
             this.lblCreditWorthy.AutoSize = true;
-            this.lblCreditWorthy.Location = new System.Drawing.Point(606, 454);
+            this.lblCreditWorthy.Location = new System.Drawing.Point(606, 477);
             this.lblCreditWorthy.Name = "lblCreditWorthy";
             this.lblCreditWorthy.Size = new System.Drawing.Size(88, 13);
             this.lblCreditWorthy.TabIndex = 60;
@@ -308,7 +310,7 @@
             // lblSalePercentage
             // 
             this.lblSalePercentage.AutoSize = true;
-            this.lblSalePercentage.Location = new System.Drawing.Point(606, 431);
+            this.lblSalePercentage.Location = new System.Drawing.Point(606, 454);
             this.lblSalePercentage.Name = "lblSalePercentage";
             this.lblSalePercentage.Size = new System.Drawing.Size(86, 13);
             this.lblSalePercentage.TabIndex = 59;
@@ -317,7 +319,7 @@
             // lblNextAction
             // 
             this.lblNextAction.AutoSize = true;
-            this.lblNextAction.Location = new System.Drawing.Point(606, 408);
+            this.lblNextAction.Location = new System.Drawing.Point(606, 431);
             this.lblNextAction.Name = "lblNextAction";
             this.lblNextAction.Size = new System.Drawing.Size(61, 13);
             this.lblNextAction.TabIndex = 58;
@@ -326,7 +328,7 @@
             // lblLastContactDate
             // 
             this.lblLastContactDate.AutoSize = true;
-            this.lblLastContactDate.Location = new System.Drawing.Point(606, 386);
+            this.lblLastContactDate.Location = new System.Drawing.Point(606, 409);
             this.lblLastContactDate.Name = "lblLastContactDate";
             this.lblLastContactDate.Size = new System.Drawing.Size(90, 13);
             this.lblLastContactDate.TabIndex = 57;
@@ -335,7 +337,7 @@
             // lblDateOfAction
             // 
             this.lblDateOfAction.AutoSize = true;
-            this.lblDateOfAction.Location = new System.Drawing.Point(606, 364);
+            this.lblDateOfAction.Location = new System.Drawing.Point(606, 387);
             this.lblDateOfAction.Name = "lblDateOfAction";
             this.lblDateOfAction.Size = new System.Drawing.Size(74, 13);
             this.lblDateOfAction.TabIndex = 56;
@@ -344,7 +346,7 @@
             // lblProspect
             // 
             this.lblProspect.AutoSize = true;
-            this.lblProspect.Location = new System.Drawing.Point(606, 342);
+            this.lblProspect.Location = new System.Drawing.Point(606, 365);
             this.lblProspect.Name = "lblProspect";
             this.lblProspect.Size = new System.Drawing.Size(72, 13);
             this.lblProspect.TabIndex = 55;
@@ -352,7 +354,7 @@
             // 
             // txtSecZip2
             // 
-            this.txtSecZip2.Location = new System.Drawing.Point(745, 317);
+            this.txtSecZip2.Location = new System.Drawing.Point(745, 340);
             this.txtSecZip2.Name = "txtSecZip2";
             this.txtSecZip2.Size = new System.Drawing.Size(126, 20);
             this.txtSecZip2.TabIndex = 54;
@@ -360,7 +362,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(606, 342);
+            this.label20.Location = new System.Drawing.Point(606, 363);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(0, 13);
             this.label20.TabIndex = 53;
@@ -368,7 +370,7 @@
             // lblOfferStatus
             // 
             this.lblOfferStatus.AutoSize = true;
-            this.lblOfferStatus.Location = new System.Drawing.Point(606, 320);
+            this.lblOfferStatus.Location = new System.Drawing.Point(606, 343);
             this.lblOfferStatus.Name = "lblOfferStatus";
             this.lblOfferStatus.Size = new System.Drawing.Size(61, 13);
             this.lblOfferStatus.TabIndex = 52;
@@ -377,7 +379,7 @@
             // lblOffernr
             // 
             this.lblOffernr.AutoSize = true;
-            this.lblOffernr.Location = new System.Drawing.Point(606, 297);
+            this.lblOffernr.Location = new System.Drawing.Point(606, 320);
             this.lblOffernr.Name = "lblOffernr";
             this.lblOffernr.Size = new System.Drawing.Size(73, 13);
             this.lblOffernr.TabIndex = 50;
@@ -387,14 +389,14 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.panel1.Location = new System.Drawing.Point(600, 283);
+            this.panel1.Location = new System.Drawing.Point(600, 306);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(292, 1);
             this.panel1.TabIndex = 67;
             // 
             // btnDel
             // 
-            this.btnDel.Location = new System.Drawing.Point(607, 481);
+            this.btnDel.Location = new System.Drawing.Point(607, 504);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(115, 34);
             this.btnDel.TabIndex = 68;
@@ -403,7 +405,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(756, 481);
+            this.btnUpdate.Location = new System.Drawing.Point(756, 504);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(115, 34);
             this.btnUpdate.TabIndex = 69;
@@ -413,56 +415,100 @@
             // nudKlantnr
             // 
             this.nudKlantnr.Location = new System.Drawing.Point(745, 10);
+            this.nudKlantnr.Maximum = new decimal(new int[] {
+            99999999,
+            0,
+            0,
+            0});
             this.nudKlantnr.Name = "nudKlantnr";
             this.nudKlantnr.Size = new System.Drawing.Size(126, 20);
             this.nudKlantnr.TabIndex = 90;
             // 
             // nudPhonenr
             // 
-            this.nudPhonenr.Location = new System.Drawing.Point(745, 212);
+            this.nudPhonenr.Location = new System.Drawing.Point(745, 235);
+            this.nudPhonenr.Maximum = new decimal(new int[] {
+            1410065407,
+            2,
+            0,
+            0});
             this.nudPhonenr.Name = "nudPhonenr";
             this.nudPhonenr.Size = new System.Drawing.Size(126, 20);
             this.nudPhonenr.TabIndex = 91;
             // 
             // NudFaxnr
             // 
-            this.NudFaxnr.Location = new System.Drawing.Point(745, 235);
+            this.NudFaxnr.Location = new System.Drawing.Point(745, 258);
+            this.NudFaxnr.Maximum = new decimal(new int[] {
+            1215752191,
+            23,
+            0,
+            0});
             this.NudFaxnr.Name = "NudFaxnr";
             this.NudFaxnr.Size = new System.Drawing.Size(126, 20);
             this.NudFaxnr.TabIndex = 92;
             // 
             // Offernr
             // 
-            this.Offernr.Location = new System.Drawing.Point(745, 295);
+            this.Offernr.Location = new System.Drawing.Point(745, 318);
+            this.Offernr.Maximum = new decimal(new int[] {
+            1410065407,
+            2,
+            0,
+            0});
             this.Offernr.Name = "Offernr";
             this.Offernr.Size = new System.Drawing.Size(126, 20);
             this.Offernr.TabIndex = 93;
             // 
-            // udProspect
+            // txtCompanyName
             // 
-            this.udProspect.Items.Add("Yes");
-            this.udProspect.Items.Add("No");
-            this.udProspect.Location = new System.Drawing.Point(745, 340);
-            this.udProspect.Name = "udProspect";
-            this.udProspect.Size = new System.Drawing.Size(126, 20);
-            this.udProspect.TabIndex = 94;
+            this.txtCompanyName.Location = new System.Drawing.Point(745, 32);
+            this.txtCompanyName.Name = "txtCompanyName";
+            this.txtCompanyName.Size = new System.Drawing.Size(126, 20);
+            this.txtCompanyName.TabIndex = 97;
             // 
-            // udCreditworthy
+            // lblCompanyName
             // 
-            this.udCreditworthy.Items.Add("Yes");
-            this.udCreditworthy.Items.Add("No");
-            this.udCreditworthy.Location = new System.Drawing.Point(745, 452);
-            this.udCreditworthy.Name = "udCreditworthy";
-            this.udCreditworthy.Size = new System.Drawing.Size(126, 20);
-            this.udCreditworthy.TabIndex = 95;
+            this.lblCompanyName.AutoSize = true;
+            this.lblCompanyName.Location = new System.Drawing.Point(606, 35);
+            this.lblCompanyName.Name = "lblCompanyName";
+            this.lblCompanyName.Size = new System.Drawing.Size(80, 13);
+            this.lblCompanyName.TabIndex = 96;
+            this.lblCompanyName.Text = "Company name";
+            // 
+            // cbProspect
+            // 
+            this.cbProspect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbProspect.FormattingEnabled = true;
+            this.cbProspect.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.cbProspect.Location = new System.Drawing.Point(745, 362);
+            this.cbProspect.Name = "cbProspect";
+            this.cbProspect.Size = new System.Drawing.Size(126, 21);
+            this.cbProspect.TabIndex = 98;
+            // 
+            // cbCreditworthy
+            // 
+            this.cbCreditworthy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCreditworthy.FormattingEnabled = true;
+            this.cbCreditworthy.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.cbCreditworthy.Location = new System.Drawing.Point(745, 474);
+            this.cbCreditworthy.Name = "cbCreditworthy";
+            this.cbCreditworthy.Size = new System.Drawing.Size(126, 21);
+            this.cbCreditworthy.TabIndex = 99;
             // 
             // frmSales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(904, 527);
-            this.Controls.Add(this.udCreditworthy);
-            this.Controls.Add(this.udProspect);
+            this.ClientSize = new System.Drawing.Size(904, 555);
+            this.Controls.Add(this.cbCreditworthy);
+            this.Controls.Add(this.cbProspect);
+            this.Controls.Add(this.txtCompanyName);
+            this.Controls.Add(this.lblCompanyName);
             this.Controls.Add(this.Offernr);
             this.Controls.Add(this.NudFaxnr);
             this.Controls.Add(this.nudPhonenr);
@@ -506,11 +552,12 @@
             this.Controls.Add(this.lblZip);
             this.Controls.Add(this.lblAdres);
             this.Controls.Add(this.lblKlantnr);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.barrocDGV);
             this.MaximizeBox = false;
             this.Name = "frmSales";
-            this.Text = "frmSales";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Text = "Sales";
+            this.Load += new System.EventHandler(this.frmSales_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.barrocDGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKlantnr)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPhonenr)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NudFaxnr)).EndInit();
@@ -522,7 +569,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView barrocDGV;
         private System.Windows.Forms.TextBox txtMail;
         private System.Windows.Forms.TextBox txtInitial;
         private System.Windows.Forms.TextBox txtCPerson;
@@ -566,7 +613,9 @@
         private System.Windows.Forms.NumericUpDown nudPhonenr;
         private System.Windows.Forms.NumericUpDown NudFaxnr;
         private System.Windows.Forms.NumericUpDown Offernr;
-        private System.Windows.Forms.DomainUpDown udProspect;
-        private System.Windows.Forms.DomainUpDown udCreditworthy;
+        private System.Windows.Forms.TextBox txtCompanyName;
+        private System.Windows.Forms.Label lblCompanyName;
+        private System.Windows.Forms.ComboBox cbProspect;
+        private System.Windows.Forms.ComboBox cbCreditworthy;
     }
 }

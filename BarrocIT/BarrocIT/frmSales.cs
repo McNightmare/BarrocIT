@@ -16,5 +16,10 @@ namespace BarrocIT
         {
             InitializeComponent();
         }
+
+        private void frmSales_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

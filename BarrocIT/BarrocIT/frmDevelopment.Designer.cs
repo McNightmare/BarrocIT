@@ -66,13 +66,13 @@
             this.lblOpenProjects = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.lblMaintenanceContract = new System.Windows.Forms.Label();
-            this.udMaintenanceContract = new System.Windows.Forms.DomainUpDown();
             this.nudKlantnr = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.tbAppointments = new System.Windows.Forms.TextBox();
             this.tbApplications = new System.Windows.Forms.TextBox();
             this.tbOpenProjects = new System.Windows.Forms.TextBox();
+            this.cbMaintenance = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKlantnr)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -392,16 +392,6 @@
             this.lblMaintenanceContract.TabIndex = 72;
             this.lblMaintenanceContract.Text = "Maintenance Contract Y/N";
             // 
-            // udMaintenanceContract
-            // 
-            this.udMaintenanceContract.Items.Add("Yes");
-            this.udMaintenanceContract.Items.Add("No");
-            this.udMaintenanceContract.Location = new System.Drawing.Point(745, 303);
-            this.udMaintenanceContract.Name = "udMaintenanceContract";
-            this.udMaintenanceContract.Size = new System.Drawing.Size(126, 20);
-            this.udMaintenanceContract.TabIndex = 87;
-            this.udMaintenanceContract.Text = "No";
-            // 
             // nudKlantnr
             // 
             this.nudKlantnr.Location = new System.Drawing.Point(745, 10);
@@ -444,15 +434,27 @@
             this.tbOpenProjects.Size = new System.Drawing.Size(126, 20);
             this.tbOpenProjects.TabIndex = 81;
             // 
+            // cbMaintenance
+            // 
+            this.cbMaintenance.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMaintenance.FormattingEnabled = true;
+            this.cbMaintenance.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.cbMaintenance.Location = new System.Drawing.Point(745, 302);
+            this.cbMaintenance.Name = "cbMaintenance";
+            this.cbMaintenance.Size = new System.Drawing.Size(126, 21);
+            this.cbMaintenance.TabIndex = 91;
+            // 
             // frmDevelopment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(904, 527);
+            this.Controls.Add(this.cbMaintenance);
             this.Controls.Add(this.numericUpDown2);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.nudKlantnr);
-            this.Controls.Add(this.udMaintenanceContract);
             this.Controls.Add(this.tbInternalContact);
             this.Controls.Add(this.tbAppointments);
             this.Controls.Add(this.tbSoftware);
@@ -495,7 +497,7 @@
             this.Controls.Add(this.lblKlantnr);
             this.Controls.Add(this.dataGridView1);
             this.Name = "frmDevelopment";
-            this.Text = "frmSales";
+            this.Text = "Development";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKlantnr)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
@@ -545,12 +547,12 @@
         private System.Windows.Forms.Label lblOpenProjects;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label lblMaintenanceContract;
-        private System.Windows.Forms.DomainUpDown udMaintenanceContract;
         private System.Windows.Forms.NumericUpDown nudKlantnr;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.TextBox tbAppointments;
         private System.Windows.Forms.TextBox tbApplications;
         private System.Windows.Forms.TextBox tbOpenProjects;
+        private System.Windows.Forms.ComboBox cbMaintenance;
     }
 }

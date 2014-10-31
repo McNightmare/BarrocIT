@@ -352,7 +352,12 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(742, 4);
+            this.numericUpDown1.Location = new System.Drawing.Point(742, 10);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
             this.numericUpDown1.TabIndex = 110;
@@ -450,7 +455,7 @@
             this.Controls.Add(this.Update);
             this.Controls.Add(this.dgvFinance);
             this.Name = "frmFinance";
-            this.Text = "Form2";
+            this.Text = "Finance";
             ((System.ComponentModel.ISupportInitialize)(this.dgvFinance)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
