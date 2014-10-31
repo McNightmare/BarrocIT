@@ -24,6 +24,7 @@ namespace BarrocIT
         public DBMachine()
         {
             con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Jeebes\Documents\GitHub\BarrocIT\BarrocIT\BarrocIT\GOTODB.mdf;Integrated Security=True");
+            Form form = new Form();
         }
        
         public void TestConnection()
@@ -117,6 +118,10 @@ namespace BarrocIT
 
 
 
+            }
+            catch(Exception e)
+            {
+                
             }
         }
     }

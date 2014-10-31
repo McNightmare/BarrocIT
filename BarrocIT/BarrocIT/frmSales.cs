@@ -19,7 +19,7 @@ namespace BarrocIT
 
         private void frmSales_Load(object sender, EventArgs e)
         {
-
+            DBMachine stuff = new DBMachine("querystuff", this);
         }
     }
 }
