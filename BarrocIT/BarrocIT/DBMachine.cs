@@ -113,8 +113,8 @@ namespace BarrocIT
                 SqlDataAdapter adapter = new SqlDataAdapter(query, con);
 
                 adapter.Fill(dbSet);
-                form.barrocDB.DataSource = dbSet.Tables[0];
-                dataGridView1.Columns[0].ReadOnly = true;
+                //form.barrocDB.DataSource = dbSet.Tables[0];
+                //dataGridView1.Columns[0].ReadOnly = true;
 
 
 

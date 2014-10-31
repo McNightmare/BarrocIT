@@ -498,6 +498,8 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "frmDevelopment";
             this.Text = "Development";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDevelopment_FormClosing_1);
+            this.Load += new System.EventHandler(this.frmDevelopment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKlantnr)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();

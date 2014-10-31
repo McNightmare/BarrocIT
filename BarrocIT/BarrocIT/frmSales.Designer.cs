@@ -556,6 +556,7 @@
             this.MaximizeBox = false;
             this.Name = "frmSales";
             this.Text = "Sales";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmSales_FormClosing);
             this.Load += new System.EventHandler(this.frmSales_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barrocDGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKlantnr)).EndInit();

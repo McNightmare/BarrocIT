@@ -21,5 +21,26 @@ namespace BarrocIT
         {
 
         }
+
+        private void frmFinance_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                DialogResult result = MessageBox.Show("Do you really want to exit?", "Exit database", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    frmLogin.isActiveFinance = false;
+                    this.Close();
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

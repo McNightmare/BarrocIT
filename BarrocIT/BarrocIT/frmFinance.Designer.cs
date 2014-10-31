@@ -456,6 +456,7 @@
             this.Controls.Add(this.dgvFinance);
             this.Name = "frmFinance";
             this.Text = "Finance";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmFinance_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFinance)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();

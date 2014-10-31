@@ -21,5 +21,26 @@ namespace BarrocIT
         {
             DBMachine stuff = new DBMachine("querystuff", this);
         }
+
+        private void frmSales_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                DialogResult result = MessageBox.Show("Do you really want to exit?", "Exit database", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    frmLogin.isActiveSales = false;
+                    this.Close();
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

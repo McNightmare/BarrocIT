@@ -10,8 +10,13 @@ using System.Windows.Forms;
 
 namespace BarrocIT
 {
+
     public partial class frmLogin : Form
     {
+        public static bool isActiveFinance = false;
+        public static bool isActiveSales = false;
+        public static bool isActiveDevelopment = false;
+
         public frmLogin()
         {
             InitializeComponent();
@@ -28,16 +33,19 @@ namespace BarrocIT
             {
                 if (cbDepartment.Text == "Sales" && txtPassword.Text == "Jberger")
                 {
+                    isActiveSales = true;
                     frmSales frmsales = new frmSales();
                     frmsales.Show();
                 }
                 else if (cbDepartment.Text == "Finance" && txtPassword.Text == "Wvortelaars")
                 {
+                    isActiveFinance = true;
                     frmFinance frmFinance = new frmFinance();
                     frmFinance.Show();
                 }
                 else if (cbDepartment.Text == "Development" && txtPassword.Text == "Hvanderhoek")
                 {
+                    isActiveDevelopment = true;
                     frmDevelopment frmdevelopment = new frmDevelopment();
                     frmdevelopment.Show();
                 }
