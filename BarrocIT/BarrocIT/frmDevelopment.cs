@@ -12,6 +12,15 @@ namespace BarrocIT
 {
     public partial class frmDevelopment: Form
     {
+        public List<Control> tbs_Dev = new List<Control>();
+        private void GetAllControls(Control container)
+        {
+            foreach (Control c in container.Controls)
+            {
+                GetAllControls(c);
+                if (c is TextBox) tbs_Dev.Add(c);
+            }
+        }
         public frmDevelopment()
         {
             InitializeComponent();
@@ -29,27 +38,6 @@ namespace BarrocIT
 
         }
 
-        private void frmDevelopment_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (e.CloseReason == CloseReason.UserClosing)
-            {
-                DialogResult result = MessageBox.Show("Do you really want to exit?", "Exit database", MessageBoxButtons.YesNo);
-                if (result == DialogResult.Yes)
-                {
-                    frmLogin.isActiveDevelopment = false;
-                    Environment.Exit(0);
-                }
-                else
-                {
-                    e.Cancel = true;
-                }
-            }
-            else
-            {
-                e.Cancel = true;
-            }
-        }
-
         private void frmDevelopment_FormClosing_1(object sender, FormClosingEventArgs e)
         {
             if (e.CloseReason == CloseReason.UserClosing)
@@ -58,7 +46,7 @@ namespace BarrocIT
                 if (result == DialogResult.Yes)
                 {
                     frmLogin.isActiveDevelopment = false;
-                    this.Close();
+                    Environment.Exit(0);   
                 }
                 else
                 {
@@ -75,5 +63,17 @@ namespace BarrocIT
         {
             
         }
+
+        private void barrocDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void barrocDGV_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+
+        }
+
+        
     }
 }
