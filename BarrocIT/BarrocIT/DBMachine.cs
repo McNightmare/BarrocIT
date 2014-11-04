@@ -28,7 +28,7 @@ namespace BarrocIT
             try
             {
                 //make and execute query
-                string query = "SELECT * FROM tbl_Finance";
+                string query = "SELECT * FROM tbl_Financial";
                 SqlDataAdapter adapter = new SqlDataAdapter(query, con);
 
                 //fill the datagridview with the results from the query

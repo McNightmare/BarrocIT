@@ -122,6 +122,7 @@
             this.Controls.Add(this.lblDepartment);
             this.Controls.Add(this.txtPassword);
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Database Management";
             this.Load += new System.EventHandler(this.frmLogin_Load);
             this.ResumeLayout(false);

@@ -85,6 +85,7 @@
             this.barrocDGV.Name = "barrocDGV";
             this.barrocDGV.Size = new System.Drawing.Size(559, 484);
             this.barrocDGV.TabIndex = 0;
+            this.barrocDGV.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.barrocDGV_RowHeaderMouseClick);
             // 
             // Update
             // 
@@ -455,6 +456,7 @@
             this.Controls.Add(this.Update);
             this.Controls.Add(this.barrocDGV);
             this.Name = "frmFinance";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Finance";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmFinance_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.barrocDGV)).EndInit();

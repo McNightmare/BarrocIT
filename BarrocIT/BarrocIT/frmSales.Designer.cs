@@ -90,6 +90,7 @@
             this.barrocDGV.Name = "barrocDGV";
             this.barrocDGV.Size = new System.Drawing.Size(559, 531);
             this.barrocDGV.TabIndex = 1;
+            this.barrocDGV.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.barrocDGV_RowHeaderMouseClick);
             // 
             // txtMail
             // 
@@ -555,6 +556,7 @@
             this.Controls.Add(this.barrocDGV);
             this.MaximizeBox = false;
             this.Name = "frmSales";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sales";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmSales_FormClosing);
             this.Load += new System.EventHandler(this.frmSales_Load);

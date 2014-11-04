@@ -50,7 +50,7 @@
             this.lblResidence = new System.Windows.Forms.Label();
             this.lblZip = new System.Windows.Forms.Label();
             this.lblAddress = new System.Windows.Forms.Label();
-            this.lblKlantnr = new System.Windows.Forms.Label();
+            this.lblCompanyID = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.tbCompany = new System.Windows.Forms.TextBox();
@@ -62,19 +62,21 @@
             this.lblAppointments = new System.Windows.Forms.Label();
             this.lblSoftware = new System.Windows.Forms.Label();
             this.lblHardware = new System.Windows.Forms.Label();
-            this.lblApps = new System.Windows.Forms.Label();
-            this.lblOpenProjects = new System.Windows.Forms.Label();
+            this.lblAppName = new System.Windows.Forms.Label();
+            this.lblApplicationID = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.lblMaintenanceContract = new System.Windows.Forms.Label();
-            this.nudKlantnr = new System.Windows.Forms.NumericUpDown();
+            this.nudCompanyID = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.tbAppointments = new System.Windows.Forms.TextBox();
             this.tbApplications = new System.Windows.Forms.TextBox();
             this.tbOpenProjects = new System.Windows.Forms.TextBox();
             this.cbMaintenance = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbAppStatus = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.barrocDGV)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudKlantnr)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCompanyID)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
@@ -86,7 +88,7 @@
             this.barrocDGV.Location = new System.Drawing.Point(12, 12);
             this.barrocDGV.Name = "barrocDGV";
             this.barrocDGV.ReadOnly = true;
-            this.barrocDGV.Size = new System.Drawing.Size(559, 503);
+            this.barrocDGV.Size = new System.Drawing.Size(559, 515);
             this.barrocDGV.TabIndex = 1;
             this.barrocDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.barrocDGV_CellContentClick);
             this.barrocDGV.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.barrocDGV_RowHeaderMouseClick);
@@ -97,6 +99,7 @@
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(126, 20);
             this.tbEmail.TabIndex = 49;
+            this.tbEmail.Tag = "Email";
             // 
             // tbInitials
             // 
@@ -104,6 +107,7 @@
             this.tbInitials.Name = "tbInitials";
             this.tbInitials.Size = new System.Drawing.Size(126, 20);
             this.tbInitials.TabIndex = 46;
+            this.tbInitials.Tag = "Initials";
             // 
             // tbContactPerson
             // 
@@ -111,6 +115,7 @@
             this.tbContactPerson.Name = "tbContactPerson";
             this.tbContactPerson.Size = new System.Drawing.Size(126, 20);
             this.tbContactPerson.TabIndex = 45;
+            this.tbContactPerson.Tag = "Cantact_Person";
             // 
             // tbResidence2
             // 
@@ -118,6 +123,7 @@
             this.tbResidence2.Name = "tbResidence2";
             this.tbResidence2.Size = new System.Drawing.Size(126, 20);
             this.tbResidence2.TabIndex = 44;
+            this.tbResidence2.Tag = "Residence2";
             // 
             // lblEmail
             // 
@@ -179,6 +185,7 @@
             this.tbSZip2.Name = "tbSZip2";
             this.tbSZip2.Size = new System.Drawing.Size(126, 20);
             this.tbSZip2.TabIndex = 37;
+            this.tbSZip2.Tag = "Postcode2";
             // 
             // label7
             // 
@@ -203,6 +210,7 @@
             this.tbAddress2.Name = "tbAddress2";
             this.tbAddress2.Size = new System.Drawing.Size(126, 20);
             this.tbAddress2.TabIndex = 34;
+            this.tbAddress2.Tag = "Address2";
             // 
             // tbResidence
             // 
@@ -210,6 +218,7 @@
             this.tbResidence.Name = "tbResidence";
             this.tbResidence.Size = new System.Drawing.Size(126, 20);
             this.tbResidence.TabIndex = 33;
+            this.tbResidence.Tag = "Residence1";
             // 
             // tbZip
             // 
@@ -217,6 +226,7 @@
             this.tbZip.Name = "tbZip";
             this.tbZip.Size = new System.Drawing.Size(126, 20);
             this.tbZip.TabIndex = 32;
+            this.tbZip.Tag = "Postcode1";
             // 
             // tbAddress
             // 
@@ -224,6 +234,7 @@
             this.tbAddress.Name = "tbAddress";
             this.tbAddress.Size = new System.Drawing.Size(126, 20);
             this.tbAddress.TabIndex = 31;
+            this.tbAddress.Tag = "Address1";
             // 
             // lblAddress2
             // 
@@ -261,18 +272,18 @@
             this.lblAddress.TabIndex = 26;
             this.lblAddress.Text = "Address";
             // 
-            // lblKlantnr
+            // lblCompanyID
             // 
-            this.lblKlantnr.AutoSize = true;
-            this.lblKlantnr.Location = new System.Drawing.Point(606, 12);
-            this.lblKlantnr.Name = "lblKlantnr";
-            this.lblKlantnr.Size = new System.Drawing.Size(68, 13);
-            this.lblKlantnr.TabIndex = 25;
-            this.lblKlantnr.Text = "Klantnummer";
+            this.lblCompanyID.AutoSize = true;
+            this.lblCompanyID.Location = new System.Drawing.Point(606, 12);
+            this.lblCompanyID.Name = "lblCompanyID";
+            this.lblCompanyID.Size = new System.Drawing.Size(65, 13);
+            this.lblCompanyID.TabIndex = 25;
+            this.lblCompanyID.Text = "Company ID";
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(607, 481);
+            this.btnUpdate.Location = new System.Drawing.Point(607, 493);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(115, 34);
             this.btnUpdate.TabIndex = 68;
@@ -282,7 +293,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(756, 481);
+            this.button2.Location = new System.Drawing.Point(756, 493);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(115, 34);
             this.button2.TabIndex = 69;
@@ -295,6 +306,7 @@
             this.tbCompany.Name = "tbCompany";
             this.tbCompany.Size = new System.Drawing.Size(126, 20);
             this.tbCompany.TabIndex = 71;
+            this.tbCompany.Tag = "Company_Name";
             // 
             // lblCompany
             // 
@@ -307,29 +319,32 @@
             // 
             // tbInternalContact
             // 
-            this.tbInternalContact.Location = new System.Drawing.Point(745, 436);
+            this.tbInternalContact.Location = new System.Drawing.Point(745, 456);
             this.tbInternalContact.Name = "tbInternalContact";
             this.tbInternalContact.Size = new System.Drawing.Size(126, 20);
             this.tbInternalContact.TabIndex = 86;
+            this.tbInternalContact.Tag = "Internal_ContactPerson";
             // 
             // tbSoftware
             // 
-            this.tbSoftware.Location = new System.Drawing.Point(745, 390);
+            this.tbSoftware.Location = new System.Drawing.Point(745, 410);
             this.tbSoftware.Name = "tbSoftware";
             this.tbSoftware.Size = new System.Drawing.Size(126, 20);
             this.tbSoftware.TabIndex = 84;
+            this.tbSoftware.Tag = "Software";
             // 
             // tbHardware
             // 
-            this.tbHardware.Location = new System.Drawing.Point(745, 368);
+            this.tbHardware.Location = new System.Drawing.Point(745, 388);
             this.tbHardware.Name = "tbHardware";
             this.tbHardware.Size = new System.Drawing.Size(126, 20);
             this.tbHardware.TabIndex = 83;
+            this.tbHardware.Tag = "Hardware";
             // 
             // lblInteralContact
             // 
             this.lblInteralContact.AutoSize = true;
-            this.lblInteralContact.Location = new System.Drawing.Point(606, 439);
+            this.lblInteralContact.Location = new System.Drawing.Point(606, 459);
             this.lblInteralContact.Name = "lblInteralContact";
             this.lblInteralContact.Size = new System.Drawing.Size(116, 13);
             this.lblInteralContact.TabIndex = 80;
@@ -338,7 +353,7 @@
             // lblAppointments
             // 
             this.lblAppointments.AutoSize = true;
-            this.lblAppointments.Location = new System.Drawing.Point(606, 416);
+            this.lblAppointments.Location = new System.Drawing.Point(606, 436);
             this.lblAppointments.Name = "lblAppointments";
             this.lblAppointments.Size = new System.Drawing.Size(71, 13);
             this.lblAppointments.TabIndex = 79;
@@ -347,7 +362,7 @@
             // lblSoftware
             // 
             this.lblSoftware.AutoSize = true;
-            this.lblSoftware.Location = new System.Drawing.Point(606, 393);
+            this.lblSoftware.Location = new System.Drawing.Point(606, 413);
             this.lblSoftware.Name = "lblSoftware";
             this.lblSoftware.Size = new System.Drawing.Size(49, 13);
             this.lblSoftware.TabIndex = 78;
@@ -356,29 +371,31 @@
             // lblHardware
             // 
             this.lblHardware.AutoSize = true;
-            this.lblHardware.Location = new System.Drawing.Point(606, 371);
+            this.lblHardware.Location = new System.Drawing.Point(606, 391);
             this.lblHardware.Name = "lblHardware";
             this.lblHardware.Size = new System.Drawing.Size(53, 13);
             this.lblHardware.TabIndex = 77;
             this.lblHardware.Text = "Hardware";
             // 
-            // lblApps
+            // lblAppName
             // 
-            this.lblApps.AutoSize = true;
-            this.lblApps.Location = new System.Drawing.Point(606, 349);
-            this.lblApps.Name = "lblApps";
-            this.lblApps.Size = new System.Drawing.Size(64, 13);
-            this.lblApps.TabIndex = 76;
-            this.lblApps.Text = "Applications";
+            this.lblAppName.AutoSize = true;
+            this.lblAppName.Location = new System.Drawing.Point(606, 349);
+            this.lblAppName.Name = "lblAppName";
+            this.lblAppName.Size = new System.Drawing.Size(90, 13);
+            this.lblAppName.TabIndex = 76;
+            this.lblAppName.Tag = "Application_Name";
+            this.lblAppName.Text = "Application Name";
             // 
-            // lblOpenProjects
+            // lblApplicationID
             // 
-            this.lblOpenProjects.AutoSize = true;
-            this.lblOpenProjects.Location = new System.Drawing.Point(606, 327);
-            this.lblOpenProjects.Name = "lblOpenProjects";
-            this.lblOpenProjects.Size = new System.Drawing.Size(73, 13);
-            this.lblOpenProjects.TabIndex = 75;
-            this.lblOpenProjects.Text = "Open projects";
+            this.lblApplicationID.AutoSize = true;
+            this.lblApplicationID.Location = new System.Drawing.Point(606, 327);
+            this.lblApplicationID.Name = "lblApplicationID";
+            this.lblApplicationID.Size = new System.Drawing.Size(73, 13);
+            this.lblApplicationID.TabIndex = 75;
+            this.lblApplicationID.Tag = "Application_ID";
+            this.lblApplicationID.Text = "Application ID";
             // 
             // label21
             // 
@@ -397,12 +414,13 @@
             this.lblMaintenanceContract.TabIndex = 72;
             this.lblMaintenanceContract.Text = "Maintenance Contract Y/N";
             // 
-            // nudKlantnr
+            // nudCompanyID
             // 
-            this.nudKlantnr.Location = new System.Drawing.Point(745, 10);
-            this.nudKlantnr.Name = "nudKlantnr";
-            this.nudKlantnr.Size = new System.Drawing.Size(126, 20);
-            this.nudKlantnr.TabIndex = 88;
+            this.nudCompanyID.Location = new System.Drawing.Point(745, 10);
+            this.nudCompanyID.Name = "nudCompanyID";
+            this.nudCompanyID.Size = new System.Drawing.Size(126, 20);
+            this.nudCompanyID.TabIndex = 88;
+            this.nudCompanyID.Tag = "Company_ID";
             // 
             // numericUpDown1
             // 
@@ -410,6 +428,7 @@
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(126, 20);
             this.numericUpDown1.TabIndex = 89;
+            this.numericUpDown1.Tag = "TelNr1";
             // 
             // numericUpDown2
             // 
@@ -417,13 +436,15 @@
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(126, 20);
             this.numericUpDown2.TabIndex = 90;
+            this.numericUpDown2.Tag = "FaxNr";
             // 
             // tbAppointments
             // 
-            this.tbAppointments.Location = new System.Drawing.Point(745, 413);
+            this.tbAppointments.Location = new System.Drawing.Point(745, 433);
             this.tbAppointments.Name = "tbAppointments";
             this.tbAppointments.Size = new System.Drawing.Size(126, 20);
             this.tbAppointments.TabIndex = 85;
+            this.tbAppointments.Tag = "Appointments";
             // 
             // tbApplications
             // 
@@ -431,6 +452,7 @@
             this.tbApplications.Name = "tbApplications";
             this.tbApplications.Size = new System.Drawing.Size(126, 20);
             this.tbApplications.TabIndex = 82;
+            this.tbApplications.Tag = "Application_Name";
             // 
             // tbOpenProjects
             // 
@@ -450,16 +472,45 @@
             this.cbMaintenance.Name = "cbMaintenance";
             this.cbMaintenance.Size = new System.Drawing.Size(126, 21);
             this.cbMaintenance.TabIndex = 91;
+            this.cbMaintenance.Tag = "Maintenance_Contract";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(606, 370);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(92, 13);
+            this.label1.TabIndex = 92;
+            this.label1.Tag = "Application_Name";
+            this.label1.Text = "Application Status";
+            // 
+            // cbAppStatus
+            // 
+            this.cbAppStatus.AllowDrop = true;
+            this.cbAppStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbAppStatus.FormattingEnabled = true;
+            this.cbAppStatus.Items.AddRange(new object[] {
+            "Active",
+            "Non-Active",
+            "Rejected",
+            "Finished"});
+            this.cbAppStatus.Location = new System.Drawing.Point(745, 367);
+            this.cbAppStatus.Name = "cbAppStatus";
+            this.cbAppStatus.Size = new System.Drawing.Size(126, 21);
+            this.cbAppStatus.TabIndex = 94;
+            this.cbAppStatus.Tag = "Application_Status";
             // 
             // frmDevelopment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(904, 527);
+            this.ClientSize = new System.Drawing.Size(904, 539);
+            this.Controls.Add(this.cbAppStatus);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.cbMaintenance);
             this.Controls.Add(this.numericUpDown2);
             this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.nudKlantnr);
+            this.Controls.Add(this.nudCompanyID);
             this.Controls.Add(this.tbInternalContact);
             this.Controls.Add(this.tbAppointments);
             this.Controls.Add(this.tbSoftware);
@@ -470,8 +521,8 @@
             this.Controls.Add(this.lblAppointments);
             this.Controls.Add(this.lblSoftware);
             this.Controls.Add(this.lblHardware);
-            this.Controls.Add(this.lblApps);
-            this.Controls.Add(this.lblOpenProjects);
+            this.Controls.Add(this.lblAppName);
+            this.Controls.Add(this.lblApplicationID);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.lblMaintenanceContract);
             this.Controls.Add(this.tbCompany);
@@ -499,14 +550,15 @@
             this.Controls.Add(this.lblResidence);
             this.Controls.Add(this.lblZip);
             this.Controls.Add(this.lblAddress);
-            this.Controls.Add(this.lblKlantnr);
+            this.Controls.Add(this.lblCompanyID);
             this.Controls.Add(this.barrocDGV);
             this.Name = "frmDevelopment";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Development";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDevelopment_FormClosing_1);
             this.Load += new System.EventHandler(this.frmDevelopment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barrocDGV)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudKlantnr)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCompanyID)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
@@ -537,7 +589,7 @@
         private System.Windows.Forms.Label lblResidence;
         private System.Windows.Forms.Label lblZip;
         private System.Windows.Forms.Label lblAddress;
-        private System.Windows.Forms.Label lblKlantnr;
+        private System.Windows.Forms.Label lblCompanyID;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox tbCompany;
@@ -549,11 +601,11 @@
         private System.Windows.Forms.Label lblAppointments;
         private System.Windows.Forms.Label lblSoftware;
         private System.Windows.Forms.Label lblHardware;
-        private System.Windows.Forms.Label lblApps;
-        private System.Windows.Forms.Label lblOpenProjects;
+        private System.Windows.Forms.Label lblAppName;
+        private System.Windows.Forms.Label lblApplicationID;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label lblMaintenanceContract;
-        private System.Windows.Forms.NumericUpDown nudKlantnr;
+        private System.Windows.Forms.NumericUpDown nudCompanyID;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.TextBox tbAppointments;
@@ -561,5 +613,7 @@
         private System.Windows.Forms.TextBox tbOpenProjects;
         private System.Windows.Forms.ComboBox cbMaintenance;
         public System.Windows.Forms.DataGridView barrocDGV;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbAppStatus;
     }
 }
