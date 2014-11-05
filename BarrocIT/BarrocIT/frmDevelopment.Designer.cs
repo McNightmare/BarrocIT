@@ -417,10 +417,25 @@
             // nudCompanyID
             // 
             this.nudCompanyID.Location = new System.Drawing.Point(745, 10);
+            this.nudCompanyID.Maximum = new decimal(new int[] {
+            999999,
+            0,
+            0,
+            0});
+            this.nudCompanyID.Minimum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
             this.nudCompanyID.Name = "nudCompanyID";
             this.nudCompanyID.Size = new System.Drawing.Size(126, 20);
             this.nudCompanyID.TabIndex = 88;
             this.nudCompanyID.Tag = "Company_ID";
+            this.nudCompanyID.Value = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
             // 
             // numericUpDown1
             // 
@@ -460,6 +475,7 @@
             this.tbOpenProjects.Name = "tbOpenProjects";
             this.tbOpenProjects.Size = new System.Drawing.Size(126, 20);
             this.tbOpenProjects.TabIndex = 81;
+            this.tbOpenProjects.Tag = "tbAppID";
             // 
             // cbMaintenance
             // 

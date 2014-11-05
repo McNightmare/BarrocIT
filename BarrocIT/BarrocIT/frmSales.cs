@@ -48,7 +48,8 @@ namespace BarrocIT
         private void barrocDGV_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             QueryHandler q = new QueryHandler();
-            q.ConfigureControls(this, e.RowIndex);
+            q.ConfigureControls(this);
+            q.LoadData(this, e.RowIndex);
         }
     }
 }

@@ -17,8 +17,9 @@ namespace BarrocIT
         SqlConnection con;
         DataSet dbSet;
         DataGridView dgv;
+        string temp;
 
-        public void ConfigureControls(Form activeForm, int rowIndex)
+        public void ConfigureControls(Form activeForm)
         {
             foreach (Control ctrl in activeForm.Controls)
             {
@@ -39,10 +40,9 @@ namespace BarrocIT
                     dgv = (DataGridView)ctrl;
                 }
             }
-            LoadData(activeForm, rowIndex);
         }
 
-        protected void LoadData(Form activeForm, int row)
+        public void LoadData(Form activeForm, int row)
         {
             con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Ricky van den Berg\Documents\GitHub\BarrocIT\BarrocIT\BarrocIT\GOTODB.mdf;Integrated Security=True");
             dbSet = new DataSet();
@@ -84,6 +84,42 @@ namespace BarrocIT
                 }
             }
 
+        }
+        public bool CheckInput()
+        {
+            temp = "Please fill out the following fields: \n";
+            foreach (TextBox tb in textboxes)
+            {
+                if (tb.Text == string.Empty)
+                {
+                    temp = temp + (tb.Tag + "\n");
+                }
+            }
+            foreach (NumericUpDown nud in nuds)
+            {
+                if (nud.Value == null)
+                {
+                    temp = temp + (nud.Tag + "\n");
+                }
+            }
+            foreach (ComboBox cb in comboboxes)
+            {
+                if (cb.Text == string.Empty)
+                {
+                    temp = temp + (cb.Tag + "\n");
+                }
+            } 
+
+            if (temp.Length > 40)
+            {
+                temp = temp + "\nthey cannot be empty!";
+                MessageBox.Show(temp);
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
     }
 }

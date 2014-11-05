@@ -12,6 +12,7 @@ namespace BarrocIT
 {
     public partial class frmDevelopment: Form
     {
+        QueryHandler q;
         public List<Control> tbs_Dev = new List<Control>();
         private void GetAllControls(Control container)
         {
@@ -35,7 +36,7 @@ namespace BarrocIT
 
         private void frmDevelopment_Load(object sender, EventArgs e)
         {
-
+            q = new QueryHandler();
         }
 
         private void frmDevelopment_FormClosing_1(object sender, FormClosingEventArgs e)
@@ -61,7 +62,7 @@ namespace BarrocIT
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            
+            q.CheckInput();
         }
 
         private void barrocDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -71,8 +72,8 @@ namespace BarrocIT
 
         private void barrocDGV_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            QueryHandler q = new QueryHandler();
-            q.ConfigureControls(this, e.RowIndex);
+            q.ConfigureControls(this);
+            q.LoadData(this, e.RowIndex);
         }
 
         
