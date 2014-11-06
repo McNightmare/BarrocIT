@@ -44,7 +44,7 @@ namespace BarrocIT
 
         public void LoadData(Form activeForm, int row)
         {
-            con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Ricky van den Berg\Documents\GitHub\BarrocIT\BarrocIT\BarrocIT\GOTODB.mdf;Integrated Security=True");
+            con = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Jeebes\Documents\Visual Studio 2013\Projects\BarrocIT\BarrocIT\GOTODB.mdf;Integrated Security=True");
             dbSet = new DataSet();
 
             foreach (DataGridViewTextBoxColumn col in dgv.Columns)
@@ -99,12 +99,31 @@ namespace BarrocIT
         public bool CheckInput()
         {
             temp = "Please fill out the following fields: \n";
+
+
+
             foreach (TextBox tb in textboxes)
             {
-                if (tb.Text == string.Empty)
+                switch (tb.Tag.ToString())
                 {
-                    temp = temp + (tb.Tag + "\n");
-                }
+                    case "Address2":
+                        
+                        break;
+                    case "Postcode2":
+                        
+                        break;
+                    case "Residence2":
+                        
+                        break;
+                    default:
+                        if (tb.Text == string.Empty)
+                        {
+                            temp = temp + (tb.Tag + "\n");
+                        }
+                        break;
+                };
+
+                
             }
             foreach (NumericUpDown nud in nuds)
             {
