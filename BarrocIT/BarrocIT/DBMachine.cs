@@ -28,7 +28,7 @@ namespace BarrocIT
             try
             {
                 //make and execute query
-                string query = "SELECT * FROM tbl_Financial";
+                string query = "SELECT * FROM tbl_Financial,tbl_Sales";
                 SqlDataAdapter adapter = new SqlDataAdapter(query, con);
 
                 //fill the datagridview with the results from the query
@@ -72,7 +72,7 @@ namespace BarrocIT
             try
             {
                 //make and execute query
-                string query = "SELECT * FROM tbl_Development";
+                string query = "SELECT * FROM tbl_Development,tbl_Sales";
                 SqlDataAdapter adapter = new SqlDataAdapter(query, con);
 
                 //fill the datagridview with the results from the query

@@ -68,6 +68,8 @@
             this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.barrocDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -83,13 +85,13 @@
             this.barrocDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.barrocDGV.Location = new System.Drawing.Point(12, 12);
             this.barrocDGV.Name = "barrocDGV";
-            this.barrocDGV.Size = new System.Drawing.Size(559, 484);
+            this.barrocDGV.Size = new System.Drawing.Size(559, 487);
             this.barrocDGV.TabIndex = 0;
             this.barrocDGV.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.barrocDGV_RowHeaderMouseClick);
             // 
             // Update
             // 
-            this.Update.Location = new System.Drawing.Point(686, 462);
+            this.Update.Location = new System.Drawing.Point(690, 465);
             this.Update.Name = "Update";
             this.Update.Size = new System.Drawing.Size(115, 34);
             this.Update.TabIndex = 70;
@@ -273,6 +275,7 @@
             this.tbLedger.Name = "tbLedger";
             this.tbLedger.Size = new System.Drawing.Size(120, 20);
             this.tbLedger.TabIndex = 107;
+            this.tbLedger.Tag = "Ledger_Nr";
             // 
             // tbBankAccount
             // 
@@ -280,6 +283,7 @@
             this.tbBankAccount.Name = "tbBankAccount";
             this.tbBankAccount.Size = new System.Drawing.Size(120, 20);
             this.tbBankAccount.TabIndex = 102;
+            this.tbBankAccount.Tag = "Bank_Account_Nr";
             // 
             // lblLedger
             // 
@@ -337,7 +341,7 @@
             // 
             // BKR
             // 
-            this.BKR.Location = new System.Drawing.Point(742, 419);
+            this.BKR.Location = new System.Drawing.Point(742, 415);
             this.BKR.Name = "BKR";
             this.BKR.Size = new System.Drawing.Size(120, 20);
             this.BKR.TabIndex = 109;
@@ -345,11 +349,11 @@
             // lblBKR
             // 
             this.lblBKR.AutoSize = true;
-            this.lblBKR.Location = new System.Drawing.Point(577, 422);
+            this.lblBKR.Location = new System.Drawing.Point(577, 418);
             this.lblBKR.Name = "lblBKR";
-            this.lblBKR.Size = new System.Drawing.Size(29, 13);
+            this.lblBKR.Size = new System.Drawing.Size(60, 13);
             this.lblBKR.TabIndex = 108;
-            this.lblBKR.Text = "BKR";
+            this.lblBKR.Text = "BTW Code";
             // 
             // numericUpDown1
             // 
@@ -385,6 +389,7 @@
             this.numericUpDown4.Name = "numericUpDown4";
             this.numericUpDown4.Size = new System.Drawing.Size(120, 20);
             this.numericUpDown4.TabIndex = 113;
+            this.numericUpDown4.Tag = "Balance";
             this.numericUpDown4.ThousandsSeparator = true;
             // 
             // numericUpDown5
@@ -393,6 +398,7 @@
             this.numericUpDown5.Name = "numericUpDown5";
             this.numericUpDown5.Size = new System.Drawing.Size(120, 20);
             this.numericUpDown5.TabIndex = 114;
+            this.numericUpDown5.Tag = "Invoice_Amount";
             // 
             // numericUpDown6
             // 
@@ -401,6 +407,7 @@
             this.numericUpDown6.Name = "numericUpDown6";
             this.numericUpDown6.Size = new System.Drawing.Size(120, 20);
             this.numericUpDown6.TabIndex = 115;
+            this.numericUpDown6.Tag = "Turnover";
             this.numericUpDown6.ThousandsSeparator = true;
             // 
             // numericUpDown7
@@ -409,12 +416,31 @@
             this.numericUpDown7.Name = "numericUpDown7";
             this.numericUpDown7.Size = new System.Drawing.Size(120, 20);
             this.numericUpDown7.TabIndex = 116;
+            this.numericUpDown7.Tag = "Limit";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(742, 438);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(120, 20);
+            this.textBox1.TabIndex = 118;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(577, 441);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.TabIndex = 117;
+            this.label1.Text = "BKR";
             // 
             // frmFinance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(904, 504);
+            this.ClientSize = new System.Drawing.Size(904, 511);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.numericUpDown7);
             this.Controls.Add(this.numericUpDown6);
             this.Controls.Add(this.numericUpDown5);
@@ -514,5 +540,7 @@
         private System.Windows.Forms.NumericUpDown numericUpDown6;
         private System.Windows.Forms.NumericUpDown numericUpDown7;
         public System.Windows.Forms.DataGridView barrocDGV;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

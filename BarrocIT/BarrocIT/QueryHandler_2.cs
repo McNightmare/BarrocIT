@@ -55,8 +55,19 @@ namespace BarrocIT
                     {
                         if (dgv[col.Index, row].Value != null)
                         {
-                            tb.Text = (string)dgv[col.Index, row].Value;
-                        }                 
+                            string temp;
+                            try
+                            {
+                                temp = Convert.ToString(dgv[col.Index, row].Value);
+                            }
+                            catch (Exception)
+                            {
+                                tb.Text = "";
+                                throw;
+                            }
+
+                            tb.Text = temp;
+                        }
                     }
                 }
             }
